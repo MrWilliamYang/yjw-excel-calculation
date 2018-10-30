@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <groupId>com.hxgy.cloud</groupId>
+    <artifactId>net-microservice-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  
+  <groupId>yjw-excel-calculation</groupId>
+  <artifactId>yjw-excel-calculation</artifactId>
+  <name>yjw-excel-calculation</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <dependencies>
+    
+    <!-- 引入apache poi的依赖包 -->
+    <dependency>  
+	    <groupId>org.apache.poi</groupId>  
+	    <artifactId>poi</artifactId>  
+	    <version>3.14</version>  
+	</dependency>
+	
+	<!-- 引入apache poi的依赖包,支持07版及以上 -->
+	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi-ooxml</artifactId>
+		<version>3.14</version>
+	</dependency>
+    
+    <!-- 支持导入依赖包 -->
+    <dependency>
+    	<groupId>commons-fileupload</groupId>
+    	<artifactId>commons-fileupload</artifactId>
+    	<version>1.3</version>
+	</dependency>
+    
+  </dependencies>
+</project>
